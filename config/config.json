@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "group-communities-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/groupCommunities/GroupCommunitiesWebPart.js",
+          "manifest": "./src/webparts/groupCommunities/GroupCommunitiesWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "GroupCommunitiesWebPartStrings": "lib/webparts/groupCommunities/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "groupcommunities-client-side-solution",
+    "id": "cdcb6d1c-3382-4f77-ba0e-5cb9dfc8eadd",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "groupcommunities description"
+      },
+      "longDescription": {
+        "default": "groupcommunities description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "groupcommunities Feature",
+        "description": "The feature that activates elements of the groupcommunities solution.",
+        "id": "876f35bb-6025-4568-a63d-ddc069b41298",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/groupcommunities.sppkg"
+  }
+}

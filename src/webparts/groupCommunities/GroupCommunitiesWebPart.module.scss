@@ -1,0 +1,128 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+.GroupCommunities {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+  margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+ 
+.col {
+  flex: 0 0 auto;
+  width:25%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+  margin-bottom: 20px;
+}
+ 
+.GroupCommunitiesHeading {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+ 
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+ 
+.topSection a{
+  color: #20417c;
+  text-decoration: none;
+  font-size: 16px;
+}
+ 
+.GroupCommunities .ContentBox {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.ImgPart {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  height: 200px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+ 
+.ImgPart img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+ 
+.Contents {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  min-height: 130px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+ 
+.Contents h3 {
+  color: #222;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+ 
+.Contents p {
+  color: #555;
+  text-align: center;
+  margin-top: 5px;
+  flex: 1;
+}
+ 
+.Contents h3:hover {
+  text-decoration: underline;
+}
+ 
+ 
+ 
+@media (max-width: 991px) {
+  .col {
+    width: 33.33333%;
+  }
+}
+ 
+@media (max-width: 768px) {
+  .col {
+    width: 50%;
+  }
+}
+ 
+@media (max-width: 550px) {
+  .col {
+    width: 100%;
+  }
+  .GroupCommunities {
+    flex-wrap: wrap;
+  }
+  .topSection a{
+    font-size: 14px;
+  }
+  .GroupCommunitiesHeading{
+    font-size: 20px;
+  }
+  .topSection{
+    margin-bottom: 22px;
+  }
+}
